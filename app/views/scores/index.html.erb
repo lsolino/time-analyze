@@ -1,0 +1,39 @@
+<div class="modal-dialog modal-lg">
+  <div class="modal-content animated fadeIn">
+    <div style="padding: 30px 15px; text-align: center;">
+      <h4 class="modal-title">Seu Resultado - "NOME"</h4>
+    </div>
+    <div class="modal-body">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="ibox-content">
+            <div id="morris-donut-chart"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal-footer" style="text-align:center;">
+      <%= link_to 'Fazer Novamente', root_path, class: "btn btn-primary" %>
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript">
+
+  $(function() {
+
+    Morris.Donut({
+      element: 'morris-donut-chart',
+      data: [{ label: "Urgência", value: <%= @value.urgency.round(2) %> },
+          { label: "Importância", value: <%= @value.importance.round(2) %> },
+          { label: "Circunstância", value: <%= @value.circumstance.round(2) %> }],
+      resize: true,
+      colors: ['red', 'blue', 'orange'],
+    });
+
+  });
+
+</script>
+

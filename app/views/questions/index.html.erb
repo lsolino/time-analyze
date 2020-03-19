@@ -1,0 +1,57 @@
+<%= form_tag scores_new_score_path, method: 'post' do %>
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content animated fadeIn">
+      <div style="padding: 30px 15px; text-align: center;">
+        <h3 class="modal-title">Análise do Tempo</h3>
+        <h5>ALFA 2020 (Tríade do Tempo)</h5>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+
+          <div class="col-md-12">
+            <div class="form-group">
+              <label class="col-sm-1 control-label">
+                Apelido:
+              </label>
+              <div class="col-sm-11">
+                <%= text_field_tag('nickname', nil, {placeholder: 'Insira seu apelido', class: 'form-control', required: true}) %>
+                <span class="help-block m-b-none">
+                  Insira seu apelido
+                </span>
+                <br>
+                <br>
+              </div>
+            </div>
+            
+            <% @questions.each.with_index(1) do |question, index| %>
+              <h4><%= question.id %> - <%= question.enunciated %></h4>
+              <div class="form-check abc-radio">
+                <%= radio_button_tag("answer#{question.category}_#{index}", '1', false, class: "form-check-input", required: true) %>
+                <label class="form-check-label" for="answer">Nunca</label>
+                <br>
+                <%= radio_button_tag("answer#{question.category}_#{index}", '2', false, class: "form-check-input") %>
+                <label class="form-check-label" for="answer">Poucas Vezes</label>
+                <br>
+                <%= radio_button_tag("answer#{question.category}_#{index}", '3', false, class: "form-check-input") %>
+                <label class="form-check-label" for="answer">Mais ou Menos</label>
+                <br>
+                <%= radio_button_tag("answer#{question.category}_#{index}", '4', false, class: "form-check-input") %>
+                <label class="form-check-label" for="answer">Bastante</label>
+                <br>
+                <%= radio_button_tag("answer#{question.category}_#{index}", '5', false, class: "form-check-input") %>
+                <label class="form-check-label" for="answer">Sempre</label>
+                <br>
+              </div>
+              <%# select_month(Date.today, field_name: 'startMonth', required: true) %>
+              <br><br>
+            <% end %>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer" style="text-align: center;">
+          <%= submit_tag 'Ver Resultado', class: "btn btn-primary"%>
+      </div>
+    </div>
+  </div>
+<% end %>
