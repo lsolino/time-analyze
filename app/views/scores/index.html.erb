@@ -5,7 +5,6 @@
     </div>
     <div class="modal-body">
       <div class="row">
-
         <div class="col-md-12">
           <div class="ibox-content">
             <div id="morris-donut-chart"></div>
@@ -15,7 +14,7 @@
     </div>
 
     <div class="modal-footer" style="text-align:center;">
-        <%= submit_tag 'Fazer Novamente', class: "btn btn-primary"%>
+      <%= link_to 'Fazer Novamente', root_path, class: "btn btn-primary" %>
     </div>
   </div>
 </div>
@@ -27,9 +26,9 @@
 
     Morris.Donut({
       element: 'morris-donut-chart',
-      data: [{ label: "Urgência", value: 12.5 },
-          { label: "Importância", value: 30 },
-          { label: "Circunstância", value: 20 }],
+      data: [{ label: "Urgência", value: <%= @value.urgency.round(2) %> },
+          { label: "Importância", value: <%= @value.importance.round(2) %> },
+          { label: "Circunstância", value: <%= @value.circumstance.round(2) %> }],
       resize: true,
       colors: ['red', 'blue', 'orange'],
     });

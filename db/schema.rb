@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20200319003753) do
+ActiveRecord::Schema.define(version: 20200319193729) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,12 +19,13 @@ ActiveRecord::Schema.define(version: 20200319003753) do
     t.string "enunciated"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "category"
   end
 
   create_table "scores", force: :cascade do |t|
     t.string "nickname"
     t.float "urgency"
-    t.float "important"
+    t.float "importance"
     t.float "circumstance"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
