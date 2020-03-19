@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'scores/index'
+
   root to: 'questions#index'
   post 'questions/novo_quiz'
 
