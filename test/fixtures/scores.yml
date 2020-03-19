@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nickname: MyString
+  urgency: 1.5
+  important: 1.5
+  circumstance: 1.5
+
+two:
+  nickname: MyString
+  urgency: 1.5
+  important: 1.5
+  circumstance: 1.5
