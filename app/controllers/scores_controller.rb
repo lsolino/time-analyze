@@ -1,7 +1,7 @@
 class ScoresController < ApplicationController
 
   def index
-    byebug
+    @value = Score.find(params[:id])
   end
 
   def new_score
@@ -23,8 +23,16 @@ class ScoresController < ApplicationController
 
     nickname = params[:nickname]
     
-    CreateScoreService.new(nickname, urgencies, importances, circumstances).call
-    byebug
+    CreateScoreService.new(
+      nickname: nickname, 
+      urgencies: urgencies, 
+      importances: importances, 
+      circumstances: circumstances
+    ).call
+
+    id = Score.last.id
+    
+    redirect_to scores_index_path(id: id)
   end
 
 end
