@@ -34,6 +34,8 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 gem 'pg'
+gem 'font-awesome-rails'
+gem 'bootstrap-sass'
 
 group :development, :test do
   gem 'rspec-rails'
