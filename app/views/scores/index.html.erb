@@ -6,9 +6,6 @@
     </div>
     <div class="modal-body">
       <div class="row">
-        <div class="flot-chart">
-          <div class="flot-chart-pie-content" id="flot-pie-chart"></div>
-        </div>
 
         <div class="col-md-12">
           <div class="ibox-content">
@@ -25,28 +22,20 @@
 </div>
 
 
-
-
-<% content_for :javascript do %>
 <script type="text/javascript">
 
-    $(function() {
+  $(function() {
 
-      
-
-        Morris.Donut({
-            element: 'morris-donut-chart',
-            data: [{ label: "Download Sales", value: 12 },
-                { label: "In-Store Sales", value: 30 },
-                { label: "Mail-Order Sales", value: 20 }],
-            resize: true,
-            colors: ['#87d6c6', '#54cdb4', '#1ab394'],
-        });
-
+    Morris.Donut({
+      element: 'morris-donut-chart',
+      data: [{ label: "Urgência", value: 12.5 },
+          { label: "Importância", value: 30 },
+          { label: "Circunstância", value: 20 }],
+      resize: true,
+      colors: ['red', 'blue', 'orange'],
     });
 
-</script>
- 
+  });
 
-<% end %>
+</script>
 

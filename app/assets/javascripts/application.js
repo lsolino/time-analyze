@@ -17,4 +17,6 @@
 //= require slimscroll/jquery.slimscroll.min.js
 //= require bootstrap-sprockets
 //= require inspinia.js
+//= require morris/morris.js
+//= require morris/raphael-2.1.0.min.js
 //= require_tree .
