@@ -12,4 +12,11 @@
 //
 //= require rails-ujs
 //= require turbolinks
+//= require jquery/jquery-3.1.1.min.js
+//= require metisMenu/jquery.metisMenu.js
+//= require slimscroll/jquery.slimscroll.min.js
+//= require bootstrap-sprockets
+//= require inspinia.js
+//= require morris/morris.js
+//= require morris/raphael-2.1.0.min.js
 //= require_tree .
