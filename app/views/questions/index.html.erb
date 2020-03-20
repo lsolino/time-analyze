@@ -24,7 +24,7 @@
             </div>
             
             <% @questions.each.with_index(1) do |question, index| %>
-              <h4><%= question.id %> - <%= question.enunciated %></h4>
+              <h4><%= index %> - <%= question.enunciated %></h4>
               <div class="form-check abc-radio">
                 <%= radio_button_tag("answer#{question.category}_#{index}", '1', false, class: "form-check-input", required: true) %>
                 <label class="form-check-label" for="answer">Nunca</label>
