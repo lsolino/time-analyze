@@ -7,15 +7,15 @@ describe 'CreateScoreService' do
     
     it 'should be created' do
       nickname = "Pimpão Pimposo"
-      urgency = [5,3,2,1,5,3]
-      importance = [5,3,2,1,5,3]
-      circumstance = [5,3,2,1,5,3]
+      urgencies = [5,3,2,1,5,3]
+      importances = [1,2,2,4,5,3]
+      circumstances = [3,3,3,5,5,1]
       expect{
         CreateScoreService.new(
           nickname: nickname,
-          urgency: urgency,
-          importance: importance,
-          circumstance: circumstance
+          urgencies: urgencies,
+          importances: importances,
+          circumstances: circumstances
         ).call
       }.to change{
         Score.all.size

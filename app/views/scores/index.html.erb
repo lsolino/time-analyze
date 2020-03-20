@@ -1,7 +1,7 @@
 <div class="modal-dialog modal-lg">
   <div class="modal-content animated fadeIn">
     <div style="padding: 30px 15px; text-align: center;">
-      <h4 class="modal-title">Seu Resultado - "NOME"</h4>
+      <h4 class="modal-title">Seu Resultado - <%= @value.nickname %></h4>
     </div>
     <div class="modal-body">
       <div class="row">
@@ -29,6 +29,7 @@
       data: [{ label: "Urgência", value: <%= @value.urgency.round(2) %> },
           { label: "Importância", value: <%= @value.importance.round(2) %> },
           { label: "Circunstância", value: <%= @value.circumstance.round(2) %> }],
+      formatter: function (value, data) { return value + '%'; },
       resize: true,
       colors: ['red', 'blue', 'orange'],
     });

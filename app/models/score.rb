@@ -4,7 +4,6 @@ class Score < ApplicationRecord
     if nickname == '' || nickname.nil?
       raise ArgumentError.new
     end
-
     if !urgency.is_a?(Float) || !importance.is_a?(Float) || !circumstance.is_a?(Float)
       raise ArgumentError.new
     end

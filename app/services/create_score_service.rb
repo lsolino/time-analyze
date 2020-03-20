@@ -19,9 +19,9 @@ class CreateScoreService
 
     Score.new.custom_initialization(
       nickname: @nickname,
-      urgency: urgency_value,
-      importance: importance_value,
-      circumstance: circumstance_value
+      urgency: urgency_value.to_f,
+      importance: importance_value.to_f,
+      circumstance: circumstance_value.to_f
     ).save!
   end
 
