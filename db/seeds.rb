@@ -6,6 +6,11 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+# Limpando tabela Question
+puts "Limpando tabela Question..."
+Question.destroy_all
+puts "Tabela Question limpada..."
+
 # Questão 1
 puts "Criando 1ª questão..."
 Question.create!(
@@ -41,7 +46,7 @@ puts "4ª questão criada!"
 # Questão 5
 puts "Criando 5ª questão..."
 Question.create!(
-  enunciated: 'Leio muitos e-mails desnecessários, com piadas, correntes, propagandas, apresentações, produtos, etc. ',
+  enunciated: 'Fico muito tempo no whatsapp, vendo stories do instagram com piadas, correntes, propagandas, apresentações, produtos, etc. ',
   category: 'C'
 )
 puts "5ª questão criada!"
@@ -73,7 +78,7 @@ puts "8ª questão criada!"
 # Questão 9
 puts "Criando 9ª questão..."
 Question.create!(
-  enunciated: 'Costumo deixar para fazer relatórios, imposto de renda, compras de natal, estudar para provas e outras tarefas perto do prazo de entrega. ',
+  enunciated: 'Costumo deixar para fazer trabalhos, relatórios, estudar para provas, organizar minhas tarefas perto do prazo de entrega. ',
   category: 'U'
 )
 puts "9ª questão criada!"
@@ -81,7 +86,7 @@ puts "9ª questão criada!"
 # Questão 10
 puts "Criando 10ª questão..."
 Question.create!(
-  enunciated: 'Assumo compromissos com outras pessoas ou aceito novas posições na empresa, mesmo que não goste muito da nova atividade, se for para aumentar meus rendimentos ou obter uma promoção. ',
+  enunciated: 'Assumo compromissos com outras pessoas ou aceito novas posições (faculdade, igreja, trabalho...), mesmo que não goste muito da nova atividade, se for para aumentar meu “status” ou obter algo em troca. ',
   category: 'C'
 )
 puts "10ª questão criada!"
@@ -89,7 +94,7 @@ puts "10ª questão criada!"
 # Questão 11
 puts "Criando 11ª questão..."
 Question.create!(
-  enunciated: 'É comum reduzir meu horário de almoço ou até mesmo comer enquanto trabalho para concluir um projeto ou tarefa. ',
+  enunciated: 'É comum reduzir meu horário de almoço ou até mesmo comer enquanto trabalho ou estudo para concluir projeto ou tarefa. ',
   category: 'U'
 )
 puts "11ª questão criada!"
@@ -113,7 +118,7 @@ puts "13ª questão criada!"
 # Questão 14
 puts "Criando 14ª questão..."
 Question.create!(
-  enunciated: 'Quando recebo um novo e-mail, costumo dar uma olhada para checar o conteúdo. ',
+  enunciated: 'Quando recebo novas mensagens, costumo dar uma olhada para checar o que me mandam. ',
   category: 'C'
 )
 puts "14ª questão criada!"
@@ -129,7 +134,7 @@ puts "15ª questão criada!"
 # Questão 16
 puts "Criando 16ª questão..."
 Question.create!(
-  enunciated: 'Estive atrasado com minhas tarefas ou reuniões nas últimas semanas  ',
+  enunciated: 'Estive atrasado com minhas tarefas (em casa, na igreja), trabalhos e reuniões nas últimas semanas. ',
   category: 'U'
 )
 puts "16ª questão criada!"
@@ -145,7 +150,7 @@ puts "17ª questão criada!"
 # Questão 18
 puts "Criando 18ª questão..."
 Question.create!(
-  enunciated: 'Não consigo realizar tudo que me propus fazer no dia e preciso fazer hora extra ou levar trabalho para casa. ',
+  enunciated: 'Não consigo realizar tudo que me propus a fazer no dia e acabo deixando minha rotina espiritual de lado, pois levo afazeres (estudos, trabalhos) para casa. ',
   category: 'U'
 )
 puts "18ª questão criada!"
