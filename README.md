@@ -4,6 +4,8 @@ This application was developed to analyze the time of each person following the 
 
 The app allows through questions' answers analyze how much time each person spends in certain areas.
 
+Link: https://alfa-2020.herokuapp.com/
+
 <h2>Installation</h2>
 
 <strong> To this project was used the following technologies: </strong>
@@ -26,6 +28,8 @@ The app allows through questions' answers analyze how much time each person spen
 Este aplicativo foi desenvolvido para analisar o tempo de cada pessoa seguindo os princípios da 'Tríade do Tempo' - Christian Barbosa
 
 O aplicativo permite, através das respostas das perguntas, analisar quanto tempo cada pessoa gasta em determinadas áreas.
+
+Link: https://alfa-2020.herokuapp.com/
 
 <h2>Instalação</h2>
 
