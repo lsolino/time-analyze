@@ -4,7 +4,7 @@ This application was developed to analyze the time of each person following the 
 
 The app allows through questions' answers analyze how much time each person spends in certain areas.
 
-<h1>Installation</h1>
+<h2>Installation</h2>
 
 <strong> To this project was used the following technologies: </strong>
 <ol>
@@ -14,7 +14,7 @@ The app allows through questions' answers analyze how much time each person spen
   <li>RSpec - v3.9</li>
 </ol>
 
-<h1>Developed by</h1>
+<h2>Developed by</h2>
 <ul>
   <li>Luan Soliño - luansolino@gmail.com</li>
 </ul>
@@ -27,7 +27,7 @@ Este aplicativo foi desenvolvido para analisar o tempo de cada pessoa seguindo o
 
 O aplicativo permite, através das respostas das perguntas, analisar quanto tempo cada pessoa gasta em determinadas áreas.
 
-<h1>Instalação</h1>
+<h2>Instalação</h2>
 
 <strong> Para esse projeto foi utilizado as tecnologias abaixo: </strong>
 <ol>
@@ -37,7 +37,7 @@ O aplicativo permite, através das respostas das perguntas, analisar quanto temp
   <li>RSpec - v3.9</li>
 </ol>
 
-<h1>Desenvolvido por</h1>
+<h2>Desenvolvido por</h2>
 <ul>
   <li>Luan Soliño - luansolino@gmail.com</li>
 </ul>
